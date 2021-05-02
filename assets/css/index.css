@@ -1,0 +1,974 @@
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* First Section */
+.section1
+{
+    width: 100%;
+    height: 37px;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+}
+.section1 .data
+{
+    position: absolute;
+    right: 0px;
+    width: 15%;
+    height: 80%;
+    font-size: 13px;
+    margin-top: 6px;
+}
+.section1 .data a
+{
+    
+   text-decoration: none;
+    color: black;
+   margin: 5px;
+}
+.section1 .data a:hover{ 
+  color: rgb(94, 92, 92);
+}
+
+/* First Section  End*/
+
+
+
+
+
+
+/* Nav  */
+.nav
+{
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.nav .logo
+{
+    width: 11%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .logo:hover
+{cursor: pointer;}
+
+.nav .logo img
+{
+    width: 65%;
+    height: 115%;
+    margin-left: 5px;
+}
+
+.nav .links
+{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin-right: -100px;
+    float: left;
+    
+}
+ .links a
+{
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    margin-top: 30px;
+    padding-bottom: 18px;
+}
+
+.border_bottom:hover
+{
+    border-bottom: 2px solid black;
+}
+
+ .dropdown:hover .dropdown-content
+{   display: block;
+    transform: scaleY(1); 
+}
+
+
+ .dropdown-content
+{  
+    top:100px;
+    position: absolute;
+    left: 0;
+    width: 100%; 
+    height: auto;
+    overflow: hidden;
+    display: block;
+    background-color: #ffffff;
+    display: none;
+    box-shadow: 10px 12px 12px 5px rgba(0,0,0,0.2);
+    z-index: 4;
+   
+}
+
+.container
+{
+    border-top: rgba(0, 0, 0, 0.692) solid 1px;
+    background-color:rgb(255, 255, 255);
+    width: 70%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    text-align: center;   
+}
+
+.container-data
+{
+    margin: auto;
+    margin-top: 10px;
+    width: 19%;
+    height: 70%;
+    color: rgb(2, 2, 2);
+}
+.container-data h2
+{
+    color: rgb(7, 7, 7);
+    font-weight: 500;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-data ul li
+{
+    list-style: none;
+    text-align: left;
+    margin: 3px;
+}
+.container-data ul
+{
+    list-style: none;
+    text-align: left;
+    margin: 3px;
+}
+.container-data a
+{
+    text-decoration: none;
+    color: rgb(94, 93, 93);
+    font-weight: lighter;
+    font-size: small;
+}
+.container-data a:hover
+{
+    color: rgb(8, 8, 8);
+}
+.container-data p
+{
+    color: rgb(85, 85, 85);
+}
+
+
+
+.nav .info
+{
+    width: 25%;
+    height: 100%;
+    background-color:rgb(255, 255, 255) ;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.nav .info .search
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav .info .search button
+{
+    height: 51%;
+    
+    background-color: rgb(242, 242, 242);
+    font-size: 14px;
+    color: rgb(20, 20, 20);
+    border: black 1px solid;
+    border-left: none;
+    
+}
+.nav .info .search button:hover
+{
+    background-color: rgb(197, 194, 194);
+}
+.nav .info .search input
+{  
+    width: 67%;
+    height: 44%;
+    border: rgba(0, 0, 0, 0.966) 1px solid;
+    border-right: none;
+    background-color: rgb(242, 242, 242);
+    /* background-color: red; */
+}
+
+.nav .info .search input::placeholder {
+    text-align: center;
+    margin-left: 30px;
+    font-size: 17px;
+    color: rgb(151, 151, 151);
+  }
+
+  .nav .info .search input:focus
+  {
+    border: black 1px solid;
+  }
+
+.nav .info .shopCart
+{
+    
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .info .shopCart a
+{
+    text-decoration: none;
+    font-size: 24px;
+    margin: 15px;
+    color: rgb(59, 59, 59);
+}
+.nav .info .shopCart a:hover
+{
+   
+    color: rgb(17, 17, 17);
+}
+
+/* Nav End */
+
+
+
+/* Section 2  */
+.section2
+{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: -27px;
+    margin-bottom: 60px;
+}
+
+#spin {
+  text-align: center;
+}
+ #spin:after {
+  content:"";
+  animation: spin 40s linear infinite; 
+}
+
+ @keyframes spin {
+  0% { content:"Welcome To SPARTA  Store "; }
+  25% { content:"BlackFriday Sales Up to 60% !"; }
+  50% { content:"Top Trending Items"; }
+  75% { content:"Latest Mens&Women Collection"; }
+}
+
+.section2 p {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 5px;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    animation: animate 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); 
+  }
+  
+  
+/* Section 2 Ends */
+
+
+
+/* Section 3 */
+
+
+video
+{
+
+    display: block;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+
+    
+}
+
+.section3
+{
+    position: relative;
+    width: 92%;
+    height: 600px;
+    margin:0 auto;
+    
+    
+
+} 
+.overlay
+{
+    z-index: 3;
+    background-color: rgba(19, 19, 18, 0.74);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+}
+.overlay p
+{
+    margin-left: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 44px;
+    font-weight: bolder;
+    color: white;
+    display: inline;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+}
+.overlay button
+{   opacity: 0.8;
+    font-size: 30px;
+    background-color: white;
+    color: rgb(17, 17, 17);
+    border-radius: 50px;
+    border: rgba(0, 0, 0, 0) solid 1px;
+    padding: 2px 15px;
+    margin: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    margin-left: 18px;
+    text-transform: uppercase;
+}
+.overlay button:hover
+{
+    cursor: pointer;
+    opacity: 1;
+    color: rgb(196, 0, 0);
+    transition: all 1s;
+}
+/* Section 3 Ends */
+
+
+
+
+
+/* Section 4 */
+#header
+{
+    width:85%;
+    margin: auto;
+    margin-top: 205px;
+    color: rgb(7, 7, 7);
+    font-weight: 200;
+    font-size: 23px;
+    font-family:sans-serif;
+}
+.section4
+{
+    
+    width: 92%;
+    height: 560px;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+.sec4-items
+{
+    
+    height:80%;
+    width: 26%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.sec4-items:hover
+{
+    border: rgba(59, 59, 59, 0.637) 1px solid;
+    
+}
+
+.sec4-items .photo
+{
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.sec4-items .photo img
+{   
+    height: 100%;
+    width: 100%;
+}
+
+.sec4-items .photo .layout
+{
+    background-color:rgba(255, 255, 255, 0.562);
+    position: absolute;
+    top: -99009px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec4-items .photo .layout button
+{
+    opacity: 0.4;
+    font-size: 30px;
+    background-color: white;
+    color: rgb(17, 17, 17);
+    border: rgba(0, 0, 0, 0.253) solid 1px;
+    border-left: none;border-right: none;
+    padding: 2px 15px;
+    margin: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    margin-left: 18px;
+    text-transform: uppercase;  
+}
+.sec4-items .photo .layout button:hover
+{
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s all;
+}
+.sec4-items .photo:hover .layout
+{
+    top: 0px;   
+}
+
+.sec4-items .text
+{
+    
+    height: 30%;
+    width: 100%;
+    text-align: left;
+}
+
+.sec4-items .text ul
+{   
+    padding: 0;
+    margin:0;
+    margin-top: 7px;
+    padding-left: 15px;
+    list-style: none;
+    text-align: left;
+    line-height: 24px;
+}
+
+.sec4-items .text li
+{   
+    margin:0;
+    list-style: none;
+    text-align: left;
+}
+
+.sec4-items .model
+{
+    font-weight: 200;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+.sec4-items .infos
+{
+    font-weight: 200;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(139, 139, 139);
+
+}
+
+
+
+/* Section 4 Ends */
+
+
+
+/* Section 5 */
+#header2
+{
+    width:92%;
+    margin: auto;
+    margin-top: 40px;
+    color: rgb(7, 7, 7);
+    font-weight: 200;
+    font-size: 23px;
+    font-family:sans-serif;
+
+}
+.section5
+{
+    width: 92%;
+    height: 500px;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.section5 .sec5-items
+{
+    height: 100%;
+    width: 49%;
+    position: relative;
+}
+
+.section5 .sec5-items img
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+.sec5-items .sec5-text
+{
+    
+    position: absolute;
+    bottom:15px;
+    left: 0px;
+    width: 100%;
+    height: 20%;
+    
+}
+.sec5-items  .sec5-text button
+{
+    background-color: white;
+    color: rgb(17, 17, 17);
+    border: rgba(0, 0, 0, 0.253) solid 1px;
+    border-radius: 90px;
+    padding: 9px 25px;
+    margin:15px 0 30px 30px ;
+    font-weight: 200;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.sec5-text button:hover
+{
+   cursor:pointer;
+   opacity: 0.7;
+}
+
+.sec5-items .sec5-text p
+{
+    margin-left: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    display: inline;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+}
+/* Section 5 Ends */
+
+
+/* Section 6 */
+#header3
+{
+    width:85%;
+    margin: auto;
+    margin-top: 100px;
+    color: rgb(7, 7, 7);
+    font-weight: 200;
+    font-size: 23px;
+    font-family:sans-serif;
+}
+.section6
+{
+    
+    width: 92%;
+    height: 560px;
+    margin: auto;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+.sec6-items
+{
+    
+    height:80%;
+    width: 26%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.sec6-items:hover
+{
+    border: black 1px solid;
+}
+
+.sec6-items .photo
+{
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.sec6-items .photo img
+{   
+    height: 100%;
+    width: 100%;
+}
+
+.sec6-items .photo .layout
+{
+    background-color:rgba(255, 255, 255, 0.562);
+    position: absolute;
+    top: -99009px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec6-items .photo .layout button
+{
+    opacity: 0.4;
+    font-size: 30px;
+    background-color: white;
+    color: rgb(17, 17, 17);
+    border: rgba(0, 0, 0, 0.253) solid 1px;
+    border-left: none;border-right: none;
+    padding: 2px 15px;
+    margin: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    margin-left: 18px;
+    text-transform: uppercase;  
+}
+.sec6-items .photo .layout button:hover
+{
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s all;
+}
+.sec6-items .photo:hover .layout
+{
+    top: 0px;   
+}
+
+.sec6-items .text
+{
+    
+    height: 30%;
+    width: 100%;
+    text-align: left;
+}
+
+.sec6-items .text ul
+{   
+    padding: 0;
+    margin:0;
+    margin-top: 7px;
+    padding-left: 15px;
+    list-style: none;
+    text-align: left;
+    line-height: 24px;
+}
+
+.sec6-items .text li
+{   
+    margin:0;
+    list-style: none;
+    text-align: left;
+}
+
+.sec6-items .model
+{
+    font-weight: 200;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+.sec6-items .infos
+{
+    font-weight: 200;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(139, 139, 139);
+
+}
+
+/* Section 6 Ends */
+
+
+/* Section 7 */
+#header4
+{
+    width:92%;
+    margin: auto;
+    margin-top: 40px;
+    color: rgb(7, 7, 7);
+    font-weight: 200;
+    font-size: 23px;
+    font-family:sans-serif;
+
+}
+.section7
+{
+    width: 92%;
+    height: 500px;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.section7 .sec7-items
+{
+    height: 100%;
+    width: 32%;
+    position: relative;
+}
+
+.section7 .sec7-items img
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+.sec7-items .sec7-text
+{
+    
+    position: absolute;
+    bottom:-10px;
+    left: 0px;
+    width: 100%;
+    height: 20%;
+    
+}
+.sec7-items  .sec7-text button
+{
+    background-color: white;
+    color: rgb(17, 17, 17);
+    border: rgba(0, 0, 0, 0.568) solid 1px;
+    border-radius: 90px;
+    padding: 9px 25px;
+    margin:15px 0 30px 30px ;
+    font-weight: 200;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.sec7-text button:hover
+{
+   cursor:pointer;
+   opacity: 0.7;
+}
+
+
+/* Section 7 Ends */
+
+
+
+
+
+
+/* Footer  */
+
+.footer
+{
+    margin-top: 150px;
+    background-color:#111;
+    width: 100%;
+    height: 279px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-data
+{
+    width: 95%;
+    margin: auto;
+    height: 59%;
+    background-color:#111;
+    position: relative;
+}
+.footer-links-box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    text-align: left;
+    align-items: center;   
+    border-bottom: rgba(192, 192, 192, 0.26) 1px solid;
+
+}
+
+.footer-links-box ul
+{
+    padding: 0;
+    margin: 0 150px 0 0;
+    list-style: none;
+}
+
+
+.footer-links-box a
+{
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    font-weight: 400;
+    font-size: small;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-links-box a:hover
+{color: rgb(255, 255, 255);}
+
+
+.footer-links
+{
+    padding: 0 0 30px 0;
+}
+
+.footer-links h3
+{   
+
+    line-height: 17px;
+    padding: 0;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer-social
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer-social a
+{
+    background-color: gray;
+    color: rgb(10, 10, 10);
+    font-size: 25px;
+    margin:9px;
+    text-decoration: none;
+}
+
+.footer-social a:hover
+{
+    background-color: rgb(228, 228, 228);
+    transition: all 1s;
+}
+
+
+
+.sub-footer
+{
+    width: 98%;
+    margin: auto;
+    height: 20%;
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;   
+}
+.sub-footer .location
+{
+    
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    text-align: left;
+    align-items: center;  
+}
+
+.sub-footer .location ul
+{
+    padding: 0;
+    margin: 0 5px 0 3px;
+    list-style: none;
+    color: rgb(247, 247, 247);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sub-footer .location p
+{
+    color: rgb(124, 124, 124);
+    font-size: 10px;
+}
+
+
+.sub-footer .bottom-links
+{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    text-align: left;
+    align-items: center;  
+    
+}
+.sub-footer .bottom-links ul
+{
+    padding: 0;
+    margin: 0 15px 0 3px;
+    list-style: none;
+    color: rgb(247, 247, 247);
+    font-size: 12px;
+}
+
+.sub-footer .bottom-links a
+{
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    font-weight: 400;
+    font-size: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub-footer .bottom-links a:hover
+{
+    color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+
+
+/* Footer  Ends */
